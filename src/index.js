@@ -1,5 +1,5 @@
   function getPoem(response){
-    console.log("Poem Generated");
+  
     new Typewriter("#poem", {
       strings:response.data.answer,
       autoStart: true,
@@ -31,9 +31,7 @@
 
 
 
-    console.log("Generating Poem");
-    console.log(`Prompt: ${prompt}`);
-    console.log(`Context: ${context}`);
+    
 
     axios.get(apiUrl).then(getPoem);
    
